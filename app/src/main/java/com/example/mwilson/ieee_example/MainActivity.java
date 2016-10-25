@@ -9,8 +9,6 @@ import android.widget.Button;
 import android.widget.GridView;
 import android.widget.Toast;
 
-import java.util.Collections;
-
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -68,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
 
                 //check for win
                 if (imageAdapter.isWin()) {
-                    Toast.makeText(MainActivity.this, "Congratulations, you won!   ", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Congratulations, you won!", Toast.LENGTH_SHORT).show();
                 }
             }
         });
