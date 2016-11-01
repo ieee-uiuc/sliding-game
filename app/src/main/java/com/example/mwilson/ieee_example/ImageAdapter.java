@@ -71,21 +71,14 @@ public class ImageAdapter extends BaseAdapter {
     }
 
     public boolean isWin() {
-        if (mThumbIds[0] == R.drawable.num1 &&
-                mThumbIds[1] == R.drawable.num2 &&
-                mThumbIds[2] == R.drawable.num3 &&
-                mThumbIds[3] == R.drawable.num4 &&
-                mThumbIds[4] == R.drawable.num5 &&
-                mThumbIds[5] == R.drawable.num6 &&
-                mThumbIds[6] == R.drawable.num7 &&
-                mThumbIds[7] == R.drawable.num8 &&
-                mThumbIds[8] == R.drawable.num9 &&
-                mThumbIds[9] == R.drawable.num10 &&
-                mThumbIds[10] == R.drawable.num11 &&
-                mThumbIds[11] == R.drawable.num12 &&
-                mThumbIds[12] == R.drawable.num13 &&
-                mThumbIds[13] == R.drawable.num14 &&
-                mThumbIds[14] == R.drawable.num15 &&
+        if (mThumbIds[0] == R.drawable.block1 &&
+                mThumbIds[1] == R.drawable.block2 && mThumbIds[2] == R.drawable.block3 &&
+                mThumbIds[3] == R.drawable.block4 && mThumbIds[4] == R.drawable.block5 &&
+                mThumbIds[5] == R.drawable.block6 && mThumbIds[6] == R.drawable.block7 &&
+                mThumbIds[7] == R.drawable.block8 && mThumbIds[8] == R.drawable.block9 &&
+                mThumbIds[9] == R.drawable.block10 && mThumbIds[10] == R.drawable.block11 &&
+                mThumbIds[11] == R.drawable.block12 && mThumbIds[12] == R.drawable.block13 &&
+                mThumbIds[13] == R.drawable.block14 && mThumbIds[14] == R.drawable.block15 &&
                 mThumbIds[15] == 0) {
             return true;
         }
@@ -94,14 +87,14 @@ public class ImageAdapter extends BaseAdapter {
 
     // references to our images
     private Integer[] mThumbIds = {
-            R.drawable.num1, R.drawable.num2,
-            R.drawable.num3, R.drawable.num4,
-            R.drawable.num5, R.drawable.num6,
-            R.drawable.num7,
-            R.drawable.num8, R.drawable.num9,
-            R.drawable.num10, R.drawable.num11,
-            R.drawable.num12, R.drawable.num13,
-            R.drawable.num14, R.drawable.num15,
-            0
+            R.drawable.block1, R.drawable.block2,
+            R.drawable.block3, R.drawable.block4,
+            R.drawable.block5, R.drawable.block6,
+            R.drawable.block7, R.drawable.block8,
+            R.drawable.block9, R.drawable.block10,
+            R.drawable.block11, R.drawable.block12,
+            R.drawable.block13, R.drawable.block14,
+            R.drawable.block15, 0
     };
+
 }

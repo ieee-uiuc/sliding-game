@@ -19,17 +19,6 @@ public class MainActivity extends AppCompatActivity {
         final GridView gridView = (GridView) findViewById(R.id.gridview);
         gridView.setAdapter(new ImageAdapter(this));
 
-        //instantiate button
-        Button resetButton = (Button) findViewById(R.id.reset_button);
-        resetButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                ImageAdapter imageAdapter = (ImageAdapter) gridView.getAdapter();
-                imageAdapter.shufflePuzzle();
-                imageAdapter.notifyDataSetChanged();
-            }
-        });
-
 
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View v,
@@ -66,8 +55,19 @@ public class MainActivity extends AppCompatActivity {
 
                 //check for win
                 if (imageAdapter.isWin()) {
-                    Toast.makeText(MainActivity.this, "Congratulations, you won!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Congratulations, you won!", Toast.LENGTH_LONG).show();
                 }
+            }
+        });
+
+        //instantiate button
+        Button resetButton = (Button) findViewById(R.id.reset_button);
+        resetButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ImageAdapter imageAdapter = (ImageAdapter) gridView.getAdapter();
+                imageAdapter.shufflePuzzle();
+                imageAdapter.notifyDataSetChanged();
             }
         });
 
